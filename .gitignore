@@ -1,0 +1,11 @@
+# Path budget: this file <= 1,024 bytes. dist/ is a required tracked deliverable.
+**/node_modules/
+**/.cache/
+**/.npm/
+**/.vite/
+**/.vite-temp/
+**/coverage/
+test/scratch/
+.imd/
+*.tsbuildinfo
+npm-debug.log*

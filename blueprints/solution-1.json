@@ -1,0 +1,126 @@
+{
+  "format": "squeek-foundry-blueprint",
+  "version": 1,
+  "engineVersion": "foundry-1.0.0",
+  "constants": {
+    "width": 12,
+    "height": 8,
+    "budget": 420,
+    "maxRules": 8,
+    "maxHorizon": 384,
+    "segmentTicks": 32,
+    "maxSegmentEnergy": 160,
+    "initialReserve": 8,
+    "baseStorage": 8,
+    "baseRate": 8,
+    "batteryCapacity": 64,
+    "batteryRate": 8,
+    "costs": {
+      "drill": 45,
+      "belt": 5,
+      "splitter": 18,
+      "smelter": 65,
+      "assembler": 85,
+      "warehouse": 35,
+      "battery": 35
+    },
+    "cycles": {
+      "drill": 2,
+      "smelter": 3,
+      "assembler": 4
+    },
+    "energy": {
+      "drill": 2,
+      "smelter": 3,
+      "assembler": 5
+    },
+    "inputCapacity": {
+      "drill": 0,
+      "belt": 1,
+      "splitter": 1,
+      "smelter": 4,
+      "assembler": 4,
+      "warehouse": 8,
+      "battery": 0
+    },
+    "outputCapacity": {
+      "drill": 3,
+      "belt": 1,
+      "splitter": 1,
+      "smelter": 3,
+      "assembler": 2,
+      "warehouse": 0,
+      "battery": 0
+    },
+    "recipes": {
+      "drill": {
+        "input": null,
+        "amount": 0,
+        "output": "ore"
+      },
+      "smelter": {
+        "input": "ore",
+        "amount": 1,
+        "output": "plate"
+      },
+      "assembler": {
+        "input": "plate",
+        "amount": 2,
+        "output": "pod"
+      }
+    }
+  },
+  "name": "First Shipment solution",
+  "layout": [
+    {
+      "id": 37,
+      "kind": "drill",
+      "dir": 0,
+      "enabled": true,
+      "priority": 0
+    },
+    {
+      "id": 38,
+      "kind": "belt",
+      "dir": 0,
+      "enabled": true,
+      "priority": 0
+    },
+    {
+      "id": 39,
+      "kind": "smelter",
+      "dir": 0,
+      "enabled": true,
+      "priority": 0
+    },
+    {
+      "id": 40,
+      "kind": "belt",
+      "dir": 0,
+      "enabled": true,
+      "priority": 0
+    },
+    {
+      "id": 41,
+      "kind": "assembler",
+      "dir": 0,
+      "enabled": true,
+      "priority": 0
+    },
+    {
+      "id": 42,
+      "kind": "belt",
+      "dir": 0,
+      "enabled": true,
+      "priority": 0
+    },
+    {
+      "id": 43,
+      "kind": "warehouse",
+      "dir": 0,
+      "enabled": true,
+      "priority": 0
+    }
+  ],
+  "rules": []
+}

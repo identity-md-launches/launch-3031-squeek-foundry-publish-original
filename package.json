@@ -1,0 +1,35 @@
+{
+  "name": "squeek-foundry",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --import tsx --test test/*.test.ts",
+    "test:browser": "node test/browser.mjs",
+    "test:a11y": "node test/accessibility.mjs",
+    "test:network": "node test/network.mjs",
+    "check:export": "node scripts/check-export.mjs"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3",
+    "vite": "8.3.6",
+    "tsx": "4.23.15",
+    "@types/node": "22.19.15",
+    "playwright": "1.65.0",
+    "axe-core": "4.14.0",
+    "prettier": "3.9.10"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
